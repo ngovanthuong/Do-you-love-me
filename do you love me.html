@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p> Do you love me ?</p>
+    <input type="button"name="" value="Yes"onclick="co()">
+    <input type="button" id="demo" value="No"onmouseover="not()" style="position: relative">
+    <script>
+        function co() {
+            alert(" OK. i love you too !")
+        }
+        function not()
+        {
+            let x= Math.random()*window.innerWidth;
+            let y= Math.random()*window.innerHeight;
+            document.getElementById('demo').style.left = x+'px';
+            document.getElementById('demo').style.top = y+'px';
+        }
+    </script>
+</form>
+</body>
+</html>
